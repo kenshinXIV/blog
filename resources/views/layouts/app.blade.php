@@ -48,10 +48,10 @@
                         </li>
                        
                         <li >
-                            <a class="nav-link" href="{{ route('pages.home') }}">{{ __('About us') }}</a>
+                            <a class="nav-link" href="{{ route('pages.aboutUs') }}">{{ __('About us') }}</a>
                         </li>
                         <li >
-                            <a class="nav-link" href="{{ route('pages.home') }}">{{ __('Contact us') }}</a>
+                            <a class="nav-link" href="{{ route('pages.contactUs') }}">{{ __('Contact us') }}</a>
                         </li>
 
                         @guest
@@ -92,10 +92,16 @@
                 @yield('content')
                 
             </div>
-            <div class="footer">
-                    &copy; Copyright <strong><span>JL</span></strong>. All Rights Reserved
-            </div>
+            
+        
         </main>
+        <section>
+            <div class="footer">
+                &copy; Copyright <strong><span>JL</span></strong>. All Rights Reserved
+            </div>
+        </section>
+                
+       
        
     </div>
 

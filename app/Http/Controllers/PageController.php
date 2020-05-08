@@ -13,4 +13,10 @@ class PageController extends Controller
     public function getBlog(){  
         return redirect()->route('blogs.index');
    }
+   public function getAboutUs(){
+     return view('pages.aboutUs');
+   }
+   public function getContactUs(){
+     return view('pages.contactUs');
+   }
 }

@@ -18,6 +18,9 @@ Auth::routes();
 // Routes for Pages
 
 Route::get('/', 'PageController@getHome')->name('pages.home');
+Route::get('/aboutUs', 'PageController@getAboutUs')->name('pages.aboutUs');
+Route::get('/contactUs', 'PageController@getContactUs')->name('pages.contactUs');
+
 Route::get('/blogs', 'BlogController@index')->name('blogs.index');
 Route::get('/blogs/{id}', 'BlogController@show')->name('blogs.show');
 
